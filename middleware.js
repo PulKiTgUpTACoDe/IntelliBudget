@@ -20,7 +20,8 @@ const aj = arcjet({
       mode: "LIVE", // will block requests. Use "DRY_RUN" to log only
       allow: [
         "CATEGORY:SEARCH_ENGINE", // Google, Bing, etc
-        "GO_HTTP", // For Inngest
+        "GO_HTTP",// For Inngest
+        "CATEGORY:VERCEL" 
         // See the full list at https://arcjet.com/bot-list
       ],
     }),
