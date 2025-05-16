@@ -11,7 +11,7 @@ const Header = async () => {
   return (
     <div className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/">
+        <Link href="/" className="flex w-1/2 gap-2">
           <Image
             src={"/logo.jpg"}
             alt="finance-ai logo"
@@ -19,6 +19,7 @@ const Header = async () => {
             width={200}
             className="h-12 w-auto object-contain"
           />
+          <p className="gradient-title text-3xl relative top-1">IntelliBudget</p>
         </Link>
 
         <div className="flex items-center space-x-4">
