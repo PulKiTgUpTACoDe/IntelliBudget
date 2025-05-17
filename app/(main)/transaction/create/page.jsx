@@ -6,7 +6,7 @@ import { getTransaction } from "@/actions/transaction";
 
 const AddTransaction = async ({ searchParams }) => {
   const accounts = await getUserAccounts();
-  const editId = searchParams.edit;
+  const editId = await searchParams.edit;
 
   let initialData = null;
   if (editId) {

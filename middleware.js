@@ -8,6 +8,7 @@ const isProtectedRoute = createRouteMatcher([
   "/transaction(.*)",
 ]);
 
+// Create Arcjet middleware
 const aj = arcjet({
   key: process.env.ARCJET_KEY,
   // characteristics: ["userId"], // Track based on Clerk userId
@@ -20,8 +21,7 @@ const aj = arcjet({
       mode: "LIVE", // will block requests. Use "DRY_RUN" to log only
       allow: [
         "CATEGORY:SEARCH_ENGINE", // Google, Bing, etc
-        "GO_HTTP",// For Inngest
-        "CATEGORY:VERCEL" 
+        "GO_HTTP", // For Inngest
       ],
     }),
   ],

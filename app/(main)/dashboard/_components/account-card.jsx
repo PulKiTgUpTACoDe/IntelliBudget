@@ -54,9 +54,10 @@ export function AccountCard({ account }) {
   const handleDeleteAccount = async (event) => {
     event.preventDefault();
 
-    if (!window.confirm("Are you sure you want to delete this account?"))
+    if(isDefault) {
+      toast.error("Cannot delete a default account");
       return;
-
+    }
     setIsDeleting(true);
     await deleteFn(id);
     setIsDeleting(false);

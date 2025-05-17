@@ -19,7 +19,7 @@ const Header = async () => {
             width={200}
             className="h-12 w-auto object-contain"
           />
-          <p className="gradient-title text-3xl relative top-1">IntelliBudget</p>
+          <p className="gradient-title sm:text-3xl relative top-1 hidden sm:block">IntelliBudget</p>
         </Link>
 
         <div className="flex items-center space-x-4">
