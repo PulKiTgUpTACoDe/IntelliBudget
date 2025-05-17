@@ -8,7 +8,7 @@ const Dashboard = () => {
         <h1 className='text-6xl font-bold gradient-title mb-5'>Dashboard</h1>
 
         {/* {Dashboard} */}
-        <Suspense fallback={<BarLoader className='mt-4' width={'100px'} color='#9333ea' />}>
+        <Suspense fallback={<BarLoader className='mt-4 w-full' width={'w-full'} color='#9333ea' />}>
             <DashboardPage />
         </Suspense>
     </div>
